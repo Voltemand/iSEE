@@ -66,7 +66,7 @@
 #' @importFrom utils packageVersion read.delim citation sessionInfo browseURL head
 #' @importFrom shinyjs useShinyjs
 #' @importFrom rintrojs introjsUI introjs
-#' @importFrom shiny plotOutput uiOutput
+#' @importFrom shiny plotOutput uiOutput img
 #' renderUI renderPlot renderPrint
 #' observe observeEvent reactiveValues isolate req
 #' actionButton selectizeInput sliderInput
