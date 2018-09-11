@@ -1581,11 +1581,10 @@ iSEE <- function(se,
 
                     search <- param_choices[[.customStatSearch]]
                     datatable(tmp_df, filter="top", rownames=TRUE,
-                              extensions = c("Buttons", "FixedColumns"),
+                              extensions = "FixedColumns",
                               options=list(search=list(search=search, smart=FALSE, regex=TRUE, caseInsensitive=FALSE), 
-                                           scrollX=TRUE, dom = "Bfrtip", 
-                                           fixedColumns = list(leftColumns = 1),
-                                           buttons = list(list(extend = "colvis", columns = seq_len(ncol(tmp_df))))))
+                                           scrollX=TRUE, 
+                                           fixedColumns = list(leftColumns = 1)))
                 })
 
                 # Updating memory for new selection parameters.
@@ -1662,13 +1661,11 @@ iSEE <- function(se,
                         }
 
                         datatable(tmp_df, filter="top", rownames=TRUE,
-                                  extensions = c("Buttons", "FixedColumns"), 
+                                  extensions = "FixedColumns", 
                                   options=list(search=list(search=search, smart=FALSE, regex=TRUE, caseInsensitive=FALSE),
                                                searchCols=c(list(NULL), search_col), # row names are the first column!
                                                scrollX=TRUE,
-                                               fixedColumns = list(leftColumns = 1),
-                                               dom = "Bfrtip", 
-                                               buttons = list(list(extend = "colvis", columns = seq_len(ncol(tmp_df))))),
+                                               fixedColumns = list(leftColumns = 1)),
                                   selection=list(mode="single", selected=chosen))
                     })
 
