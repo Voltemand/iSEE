@@ -13,3 +13,39 @@ template:
   params:
     bootswatch: cosmo
     
+navbar:
+  structure:
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - tutorials
+    - news
+    right: github
+  components:
+    home:
+      icon: fa-home fa-lg
+      href: index.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    articles:
+      text: Articles
+      menu:
+      - text: "An introduction to the `r Biocpkg(\"iSEE\")` interface \n"
+        href: articles/basic.html
+      - text: |
+          Configuring `r Biocpkg("iSEE")` apps
+        href: articles/configure.html
+      - text: Deploying custom panels in the `iSEE` interface
+        href: articles/custom.html
+      - text: Describing the `ExperimentColorMap` class
+        href: articles/ecm.html
+    news:
+      text: Changelog
+      href: news/index.html
+    github:
+      icon: fa-github fa-lg
+      href: https://github.com/csoneson/iSEE
+
