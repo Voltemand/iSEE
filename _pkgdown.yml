@@ -1,0 +1,15 @@
+authors:
+  Federico Marini:
+    href: https://federicomarini.github.io
+  Charlotte Soneson:
+    href: link_to_charlotte
+  Aaron Lun:
+    href: link_to_aaron
+  Kevin Rue-Albrecht:
+    href: link_to_kevin
+
+
+template:
+  params:
+    bootswatch: cosmo
+    
