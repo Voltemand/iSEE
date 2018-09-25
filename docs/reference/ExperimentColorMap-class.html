@@ -304,7 +304,7 @@ whether the default colormap returned should be categorical <code>TRUE</code> or
 #&gt; &lt;environment: namespace:viridisLite&gt;</div><div class='input'><span class='fu'>assayColorMap</span>(<span class='no'>ecm</span>, <span class='st'>"counts"</span>)</div><div class='output co'>#&gt; function(n){
 #&gt;   c("black", "brown", "red", "orange", "yellow")
 #&gt; }
-#&gt; &lt;environment: 0x7fc61531acc8&gt;</div><div class='input'><span class='fu'>assayColorMap</span>(<span class='no'>ecm</span>, <span class='st'>"cufflinks_fpkm"</span>)</div><div class='output co'>#&gt; function (n, alpha = 1, begin = 0, end = 1, direction = 1) 
+#&gt; &lt;environment: 0x7fd354de7958&gt;</div><div class='input'><span class='fu'>assayColorMap</span>(<span class='no'>ecm</span>, <span class='st'>"cufflinks_fpkm"</span>)</div><div class='output co'>#&gt; function (n, alpha = 1, begin = 0, end = 1, direction = 1) 
 #&gt; {
 #&gt;     viridis(n, alpha, begin, end, direction, option = "inferno")
 #&gt; }
@@ -319,7 +319,7 @@ whether the default colormap returned should be categorical <code>TRUE</code> or
 #&gt;   names(qc_colors) &lt;- c("Y", "N")
 #&gt;   return(qc_colors)
 #&gt; }
-#&gt; &lt;environment: 0x7fc61531acc8&gt;</div><div class='input'><span class='fu'>colDataColorMap</span>(<span class='no'>ecm</span>, <span class='st'>"undefined"</span>)</div><div class='output co'>#&gt; function (n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") 
+#&gt; &lt;environment: 0x7fd354de7958&gt;</div><div class='input'><span class='fu'>colDataColorMap</span>(<span class='no'>ecm</span>, <span class='st'>"undefined"</span>)</div><div class='output co'>#&gt; function (n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") 
 #&gt; {
 #&gt;     if (begin &lt; 0 | begin &gt; 1 | end &lt; 0 | end &gt; 1) {
 #&gt;         stop("begin and end must be in [0,1]")
@@ -346,7 +346,7 @@ whether the default colormap returned should be categorical <code>TRUE</code> or
 #&gt;     cols &lt;- fn_cols(seq(begin, end, length.out = n))/255
 #&gt;     grDevices::rgb(cols[, 1], cols[, 2], cols[, 3], alpha = alpha)
 #&gt; }
-#&gt; &lt;bytecode: 0x7fc61239acd8&gt;
+#&gt; &lt;bytecode: 0x7fd351ecaa88&gt;
 #&gt; &lt;environment: namespace:viridisLite&gt;</div><div class='input'>
 <span class='co'># rowData colormaps</span>
 <span class='fu'>rowDataColorMap</span>(<span class='no'>ecm</span>, <span class='st'>"undefined"</span>)</div><div class='output co'>#&gt; function (n, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") 
@@ -376,7 +376,7 @@ whether the default colormap returned should be categorical <code>TRUE</code> or
 #&gt;     cols &lt;- fn_cols(seq(begin, end, length.out = n))/255
 #&gt;     grDevices::rgb(cols[, 1], cols[, 2], cols[, 3], alpha = alpha)
 #&gt; }
-#&gt; &lt;bytecode: 0x7fc61239acd8&gt;
+#&gt; &lt;bytecode: 0x7fd351ecaa88&gt;
 #&gt; &lt;environment: namespace:viridisLite&gt;</div><div class='input'>
 <span class='co'># generic accessors</span>
 <span class='fu'>assays</span>(<span class='no'>ecm</span>)</div><div class='output co'>#&gt; $counts
@@ -384,14 +384,14 @@ whether the default colormap returned should be categorical <code>TRUE</code> or
 #&gt; {
 #&gt;     c("black", "brown", "red", "orange", "yellow")
 #&gt; }
-#&gt; &lt;environment: 0x7fc61531acc8&gt;
+#&gt; &lt;environment: 0x7fd354de7958&gt;
 #&gt; 
 #&gt; $tophat_counts
 #&gt; function (n) 
 #&gt; {
 #&gt;     c("black", "brown", "red", "orange", "yellow")
 #&gt; }
-#&gt; &lt;environment: 0x7fc61531acc8&gt;
+#&gt; &lt;environment: 0x7fd354de7958&gt;
 #&gt; 
 #&gt; $cufflinks_fpkm
 #&gt; function (n, alpha = 1, begin = 0, end = 1, direction = 1) 
